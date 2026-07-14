@@ -67,3 +67,71 @@ body {
 /* Please write your responsive codes after this comment.
 Do not delete any of the above code. */
 
+.light-box{
+  background-color:red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8pxc;
+}
+
+
+/*c2*/
+.layout-wrapper{
+  display:flex;
+  gap: 20px;
+}
+
+.main-content{
+  background-color: #3498db;
+  padding:20px;
+  color:white;
+  text-shadow:2px 2px 5px black;
+  border: radius 8px;
+}
+
+.sidebar{
+  background-color: cadetblue;
+  padding: 20px;
+  color: white;
+  text-shadow:2px 2px 5px black;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 991px){ 
+  .light-box{
+    background-color: yellow;
+    color: #2c3e50;
+  }
+}
+
+
+/*styling for moblie*/
+@media screen and (max-width:786px){
+  /*c1 stlying for mobile*/
+.light-box{
+  background-color: green;
+  color: white;
+}
+}
+/*C2 styling for mobile*/
+.layout-wrapper{
+  flex-direction: column;
+}
+
+.hamburger-icon{
+  display: block;
+}
+.nav-links{
+  display: none;
+  background-color: #3498db;
+  position: absolute;
+  top:100%;
+  right: 0;
+  padding: 10px 0px;
+  width: 150px;
+}
+
+.nav-links li{
+  margin: 10px 0px;
+}
